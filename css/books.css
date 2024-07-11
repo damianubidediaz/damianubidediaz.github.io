@@ -1,0 +1,9 @@
+#body {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#body section img {
+    max-width: 449.5px;
+    max-height: 635px;
+}
