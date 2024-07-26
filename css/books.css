@@ -1,9 +1,20 @@
 #body {
     padding-top: 50px;
     text-align: center;
+    display: flex;
 }
 
 #body section img {
     max-width: 449.5px;
     max-height: 635px;
+}
+
+#synopsis {
+    display: grid;
+    align-content: space-around;
+    margin-left: 70px;
+}
+
+#synopsis p {
+    text-align: left;
 }
