@@ -4,17 +4,30 @@
     display: flex;
 }
 
+/*Imagenes en general*/
 #body section img {
     max-width: 449.5px;
     max-height: 635px;
 }
 
-#synopsis {
-    display: grid;
-    align-content: space-around;
+#description {
+    display: block;
     margin-left: 70px;
 }
 
-#synopsis p {
+#description p {
     text-align: left;
+}
+
+#description i {
+    text-align: left;
+}
+
+#payDiv {
+    background-color: #ffffff8f;
+    padding: 9%;
+}
+
+#short_book p{
+    text-align: justify;
 }

@@ -144,6 +144,11 @@ body {
     height: 262px;
 }
 
+#lastest_books {
+    display: flex;
+    gap: 5px;
+}
+
 #lastest_books div li {
     margin: 0;
     padding: 0;
@@ -155,6 +160,13 @@ body {
 #biographie_content {
     display: flex;
     align-items: center;
+}
+
+#biographie_photo img {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
 }
 
 #biographie_text {

@@ -21,6 +21,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 
             }
+        } else if (elemento.classList.contains('aviable')) {
+            const li = elemento.querySelector('li');
+
+            if (li) {
+
+                const a = li.querySelector('a');
+                if (a) {
+
+                    const nuevoP = document.createElement('p');
+                    nuevoP.textContent = 'DISPONIBLE';
+                    nuevoP.style.color = 'white';
+                    nuevoP.style.fontWeight = 'bold'
+                    li.insertBefore(nuevoP, a);
+
+                }
+                
+            }
         }
     });
 
