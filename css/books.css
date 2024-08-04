@@ -1,7 +1,7 @@
 #body {
     padding-top: 50px;
     text-align: center;
-    display: flex;
+    display: block;
 }
 
 /*Imagenes en general*/
@@ -13,6 +13,7 @@
 #description {
     display: block;
     margin-left: 70px;
+    margin-right: 70px;
 }
 
 #description p {
@@ -30,4 +31,12 @@
 
 #short_book p{
     text-align: justify;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@media (min-width:992px) {
+    #body {
+        display: flex;
+    }
 }

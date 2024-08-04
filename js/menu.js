@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var menu = document.getElementById("menu_writings");
+    const body = document.getElementById("body");
+    var writingsMenu = document.getElementById("menu_writings");
 
     // Crear elementos de submenú
     var submenu = document.createElement("div");
@@ -19,16 +20,34 @@ document.addEventListener("DOMContentLoaded", function() {
     submenu.style.textAlign = "center";
 
     // Agregar submenú al menú principal
-    menu.appendChild(submenu);
+    writingsMenu.appendChild(submenu);
 
     // Mostrar/ocultar submenú al pasar el ratón
-    menu.addEventListener("mouseenter", function() {
-        setTimeout(function() {
+    writingsMenu.addEventListener("mouseenter", function() {
+        if(window.innerWidth >= 992) {
             submenu.style.display = "block";
-        }, 300);
+        } else {
+            submenu.style.display = "contents";
+        }
     });
 
-    menu.addEventListener("mouseleave", function() {
+    writingsMenu.addEventListener("mouseleave", function() {
         submenu.style.display = "none";
     });
+
+    /*Burger menu*/
+    var burgerMenu = document.getElementsByClassName("burguer_menu")[0];
+    const menu = document.getElementById('menu');
+
+    burgerMenu.addEventListener("click", function() {
+        if(burgerMenu.classList.contains('open')) {
+            body.style.display = "block";
+            burgerMenu.classList.remove('open');
+            menu.classList.remove('open');
+        } else {
+            body.style.display = "none";
+            burgerMenu.classList.add('open');
+            menu.classList.add('open');
+        }
+    });  
 });
